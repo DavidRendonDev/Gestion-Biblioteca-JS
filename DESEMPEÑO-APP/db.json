@@ -1,0 +1,123 @@
+{
+  "usuarios": [
+    {
+      "id": "4528",
+      "nombre": "monda",
+      "correo": "monda@gmail.com",
+      "contrasena": "hola123",
+      "rol": "bibliotecario"
+    },
+    {
+      "id": "6a32",
+      "nombre": "carlos",
+      "correo": "carlitos@gmail.com",
+      "contrasena": "hola123",
+      "rol": "bibliotecario"
+    },
+    {
+      "id": "0f82",
+      "nombre": "dadaa",
+      "correo": "da@nunca.com",
+      "contrasena": "123456",
+      "rol": "bibliotecario"
+    },
+    {
+      "id": "26f3",
+      "nombre": "andres",
+      "correo": "adresito@gmail.com",
+      "contrasena": "123456",
+      "rol": "visitante"
+    },
+    {
+      "id": "be8f",
+      "nombre": "diego",
+      "correo": "diego@hotmail.com",
+      "contrasena": "hola123",
+      "rol": "visitante"
+    },
+    {
+      "id": "5ff9",
+      "nombre": "darkiel",
+      "correo": "darki@hotmail.com",
+      "contrasena": "hola123",
+      "rol": "visitante"
+    },
+    {
+      "id": "0095",
+      "nombre": "santos",
+      "correo": "santos@hotmail.com",
+      "contrasena": "hola123",
+      "rol": "bibliotecario"
+    }
+  ],
+  "libros": [
+    {
+      "titulo": "Cien años de soledad",
+      "autor": "Gabriel García Márquez",
+      "disponibles": 0,
+      "id": "1"
+    },
+    {
+      "id": "e5ba",
+      "titulo": "matrix",
+      "autor": "narsis",
+      "disponibles": 4
+    }
+  ],
+  "reservas": [
+    {
+      "id": "224a",
+      "idLibro": 1,
+      "idUsuario": "5ff9",
+      "fecha": "2025-07-09"
+    },
+    {
+      "id": "4fb2",
+      "idLibro": 1,
+      "idUsuario": "5ff9",
+      "fecha": "2025-07-09"
+    },
+    {
+      "id": "775d",
+      "idLibro": 1,
+      "idUsuario": "5ff9",
+      "fecha": "2025-07-09"
+    },
+    {
+      "id": "e716",
+      "idLibro": 1,
+      "idUsuario": "5ff9",
+      "fecha": "2025-07-09"
+    },
+    {
+      "id": "2009",
+      "idLibro": 1,
+      "idUsuario": "5ff9",
+      "fecha": "2025-07-09"
+    },
+    {
+      "id": "e76d",
+      "idLibro": 1,
+      "idUsuario": "5ff9",
+      "fecha": "2025-07-09"
+    },
+    {
+      "id": "edfb",
+      "idLibro": 1,
+      "idUsuario": "5ff9",
+      "fecha": "2025-07-09"
+    },
+    {
+      "id": "2ac0",
+      "idLibro": 1,
+      "idUsuario": "5ff9",
+      "fecha": "2025-07-09"
+    },
+    {
+      "id": "9ec7",
+      "idLibro": 1,
+      "idUsuario": "5ff9",
+      "fecha": "2025-07-09"
+    }
+  ]
+}

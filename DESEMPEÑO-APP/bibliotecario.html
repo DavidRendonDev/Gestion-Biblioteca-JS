@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Gestión de Libros - Bibliotecario</title>
+  <link rel="stylesheet" href="STYLES/style.css" />
+</head>
+<body>
+  <header class="encabezado">
+    <button id="toggleModo" style="margin-left:auto;">🌙 Cambiar modo</button>
+
+  <img src="Assets/logo-biblioteca.png" alt="Logo Biblioteca" class="logo" />
+  <h1>Biblioteca Pública</h1>
+</header>
+
+  <h2 id="bienvenida"></h2>
+  <h3>Gestión de libros</h3>
+
+  <form id="formLibro">
+    <input type="hidden" id="idLibro" />
+    <input type="text" id="titulo" placeholder="Título" required />
+    <input type="text" id="autor" placeholder="Autor" required />
+    <input type="number" id="disponibles" placeholder="Cantidad disponible" required />
+    <button type="submit">Guardar libro</button>
+  </form>
+
+  <h3>Lista de libros</h3>
+  <ul id="listaLibros"></ul>
+
+  <button id="cerrarSesion">Cerrar sesión</button>
+
+  <script src="books.js"></script>
+
+
+</body>
+
+
+</html>

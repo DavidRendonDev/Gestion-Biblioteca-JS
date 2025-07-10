@@ -1,0 +1,223 @@
+/* Importar fuentes desde Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Open+Sans:wght@400;600&display=swap');
+
+:root {
+  --color-primario: #1A3C40;
+  --color-secundario: #387373;
+  --fondo-claro: #F4F4F4;
+  --texto-oscuro: #2C2C2C;
+  --fuente-titulos: 'Merriweather', serif;
+  --fuente-texto: 'Open Sans', sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--fuente-texto);
+  background-color: var(--fondo-claro);
+  color: var(--texto-oscuro);
+}
+
+h2, h3 {
+  font-family: var(--fuente-titulos);
+  color: var(--color-primario);
+  text-align: center;
+  margin-top: 20px;
+}
+
+form {
+  background-color: white;
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+
+form:hover {
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+}
+
+input, select, button {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+input:focus, select:focus {
+  border-color: var(--color-secundario);
+  outline: none;
+}
+
+button {
+  background-color: var(--color-secundario);
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s;
+}
+
+button:hover {
+  background-color: var(--color-primario);
+  transform: scale(1.02);
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+ul li {
+  background-color: white;
+  margin-bottom: 12px;
+  padding: 16px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ul li button {
+  width: auto;
+  margin-left: 8px;
+  padding: 8px 12px;
+  font-size: 14px;
+}
+
+/* RESPONSIVO */
+@media (max-width: 600px) {
+  form, ul {
+    margin: 10px;
+    padding: 10px;
+  }
+
+  ul li {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  ul li button {
+    margin-top: 10px;
+  }
+}
+.encabezado {
+  background-color: var(--color-primario);
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+  height: 50px;
+  width: auto;
+}
+
+.encabezado h1 {
+  font-family: var(--fuente-titulos);
+  font-size: 24px;
+  margin: 0;
+}
+/* ---------- MODO OSCURO ---------- */
+
+#toggleModo {
+    width: 500px;
+}
+
+body.modo-oscuro {
+  background-color: #1E1E1E;
+  color: #E4E4E4;
+}
+
+body.modo-oscuro form,
+body.modo-oscuro ul li {
+  background-color: #2A2A2A;
+  color: #E4E4E4;
+  box-shadow: 0 2px 6px rgba(255, 255, 255, 0.1);
+}
+
+body.modo-oscuro input,
+body.modo-oscuro select {
+  background-color: #333;
+  color: #fff;
+  border: 1px solid #666;
+}
+
+body.modo-oscuro button {
+  background-color: #444;
+  color: #fff;
+}
+
+body.modo-oscuro .encabezado {
+  background-color: #121212;
+}
+
+body.modo-oscuro .logo {
+  filter: brightness(85%);
+}
+
+/* Transiciones suaves */
+body,
+form,
+input,
+button,
+ul li {
+  transition: background-color 0.4s ease, color 0.3s ease;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--color-primario);
+  padding: 15px 25px;
+  color: white;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.nav-logo {
+  font-family: var(--fuente-titulos);
+  font-size: 20px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin: 0;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+.nav-links button {
+  background-color: #387373;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.nav-links button:hover {
+  background-color: #295c5c;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bienvenido a la Biblioteca</title>
+  <link rel="stylesheet" href="STYLES/style.css" />
+  <style>
+    .bienvenida {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(to bottom right, #1A3C40, #387373);
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .bienvenida h1 {
+      font-size: 2.8rem;
+      font-family: 'Merriweather', serif;
+      margin-bottom: 10px;
+    }
+
+    .bienvenida p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin-bottom: 40px;
+      font-family: 'Open Sans', sans-serif;
+    }
+
+    .btn-comenzar {
+      background-color: #F4F4F4;
+      color: #1A3C40;
+      font-size: 1.2rem;
+      font-weight: bold;
+      border: none;
+      border-radius: 10px;
+      padding: 12px 30px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .btn-comenzar:hover {
+      background-color: #e2e2e2;
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <section class="bienvenida">
+    <h1>Bienvenido a la Biblioteca Pública</h1>
+    <p>Explora nuestro catálogo de libros, reserva tus favoritos y gestiona tus actividades como visitante o personal bibliotecario.</p>
+    <button class="btn-comenzar" onclick="window.location.href='login.html'">Comenzar</button>
+  </section>
+</body>
+</html>
